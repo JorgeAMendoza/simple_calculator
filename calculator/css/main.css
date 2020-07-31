@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #babfbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; }
+
+#calculator {
+  border: 1px solid black;
+  width: 650px;
+  height: 800px;
+  background-color: #000; }
