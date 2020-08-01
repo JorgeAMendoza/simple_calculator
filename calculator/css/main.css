@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   background-color: #babfbb;
@@ -11,7 +12,47 @@ body {
   overflow: hidden; }
 
 #calculator {
-  border: 1px solid black;
   width: 650px;
   height: 800px;
-  background-color: #000; }
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr); }
+  #calculator #display {
+    background-color: #d9d9d9;
+    grid-column-start: 1;
+    grid-column-end: 6; }
+  #calculator .num {
+    cursor: pointer;
+    border: none;
+    font-size: 2rem; }
+    #calculator .num-clear {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      color: white;
+      background-color: black; }
+      #calculator .num-clear:active {
+        background-color: #242424; }
+    #calculator .num-back {
+      background-color: black;
+      color: white; }
+      #calculator .num-back:active {
+        background-color: #242424; }
+    #calculator .num-enter {
+      grid-column-start: 4;
+      grid-column-end: 6;
+      color: white;
+      background-color: black;
+      font-size: 1.5rem; }
+      #calculator .num-enter:active {
+        background-color: #242424; }
+    #calculator .num-input {
+      color: white;
+      background-color: #fa7f05; }
+      #calculator .num-input:active {
+        opacity: .9; }
+    #calculator .num-func {
+      color: white;
+      background-color: black; }
+      #calculator .num-func:active {
+        background-color: #242424; }
