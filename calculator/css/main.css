@@ -4,6 +4,7 @@
   box-sizing: border-box; }
 
 body {
+  font-family: 'Sora', sans-serif;
   background-color: #babfbb;
   display: flex;
   justify-content: center;
@@ -21,7 +22,12 @@ body {
   #calculator #display {
     background-color: #d9d9d9;
     grid-column-start: 1;
-    grid-column-end: 6; }
+    grid-column-end: 6;
+    display: flex;
+    justify-content: end;
+    align-items: center; }
+    #calculator #display #num-text {
+      font-size: 3rem; }
   #calculator .num {
     cursor: pointer;
     border: none;
